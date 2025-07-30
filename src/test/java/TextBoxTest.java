@@ -43,7 +43,7 @@ public class TextBoxTest {
 
         //05) Retrieve the typed text.
         WebElement retrieveText = driver.findElement(By.id("j_idt88:j_idt97"));
-        String  textValue = retrieveText.getAttribute("value");
+        String textValue = retrieveText.getAttribute("value");
         System.out.println(textValue);
 
 
