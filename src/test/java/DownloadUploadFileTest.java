@@ -18,13 +18,14 @@ public class DownloadUploadFileTest {
     public void openBrowser() throws InterruptedException {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        Thread.sleep(3000);
+
     }
 
 
     @Test
     public void testingDownload() throws InterruptedException {
       driver.get("https://leafground.com/file.xhtml");
+      Thread.sleep(3000);
 
       WebElement downloadBtn = driver.findElement(By.id("j_idt93:j_idt95"));
       downloadBtn.click();
